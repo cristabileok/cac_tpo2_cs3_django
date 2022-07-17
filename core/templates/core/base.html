@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/core/css/style.css' %}">
+    <link href="http://fonts.cdnfonts.com/css/percolator-text" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+
+        <!-- Title -->
+                
+        <div class="main_title">
+            <figure>
+                <img class="logo" src="{% static 'core/img/Logo CS3 nuevo.png' %}">
+            </figure>
+            <div class="main_title_text">
+                <h1>
+                    <span>C</span>ristian <span>S</span>tábile
+                </h1>
+                <p>
+                    <span>C</span>ertified <span>S</span>trength <span id='and'>&</span> <span>C</span>onditioning <span>S</span>pecialist
+                </p>                
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">PRINCIPAL</a></li>
+                <li><a href="{% url 'about' %}">SOBRE MÍ</a></li>
+                <li><a href="{% url 'timetable_fees' %}">HORARIOS & TARIFAS</a></li>
+                <li><a href="{% url 'contact' %}">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Main Content -->
+
+    <section>
+
+    {% block content%}{% endblock %}
+
+    </section>
+    
+    <!-- Footer -->
+
+    <footer>
+
+        <span>
+            <a href='#'><img class="social_icon" src="{% static 'core/img/logo_facebook.jpg' %}" name="social_icon_facebook"></a>
+            <a href='#'><img class="social_icon" src="{% static 'core/img/logo_instagram.jpg' %}" name="social_icon_instagram"></a>
+            <a href='#'><img class="social_icon" src="{% static 'core/img/logo_telegram.png' %}" name="social_icon_telegram"></a>
+            <a href='#'><img class="social_icon" src="{% static 'core/img/logo_twitter.webp' %}" name="social_icon_twitter"></a>
+            <a href='#'><img class="social_icon" src="{% static 'core/img/logo_whatsapp.jpg' %}" name="social_icon_whasapp"></a>
+        </span>
+
+        <span>
+            <p>© 2022. <a href=# ><b>Cristian Leandro Stábile</b></a>. Todos los derechos reservados.</p>
+        </span>
+       
+        <span>
+            <p><a href=#><b> ^ VOLVER ARRIBA ^</b></a></p>
+        </span>
+
+    </footer>
+
+</body>
+</html>

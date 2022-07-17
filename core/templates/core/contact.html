@@ -1,0 +1,102 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}CS3 - Contacto{% endblock %}
+
+
+{% block content %}
+
+    <article>
+
+        <h2> Completá el formulario<br>y me pondré en contacto a la brevedad.</h2>                
+                
+        <form action="" name="form" method="get">
+
+            <div>
+
+                <span>
+
+                    <p><label for="form_name">Nombre y Apellido: <input type="text" name="form_name" id="form_name" placeholder="John Galt" maxlength="30"></label></p>
+                    <p><label for="form_age">Edad: <input type="number" name="form_age" id="form_age" placeholder="Aging Gracefully" maxlength="3"></label></p>
+
+                </span>
+                            
+                <span>
+                    <p>Sexo:
+                    <br>
+                    <input type="radio" name="form_sex" id="form_male">
+                    <label for="form_male">Masculino</label>
+                    <br>
+                    <input type="radio" name="form_sex" id="form_female">
+                    <label for="form_female">Femenino</label>
+                    </p>
+                </span>
+
+            </div>
+
+            
+            <div>
+
+                <span>
+                    <p><label for="form_email">Email: <input type="email" name="form_email" id="form_email" placeholder="alguien@algo.com" maxlength="30"></label></p>
+                    <p><label for="form_phone">Teléfono: <input type="number" name="form_phone" id="form_phone" placeholder="11 2358 1321" maxlength="15"></label></p>
+                </span>
+
+                <span>
+                    <p><label for="form_phone_option">Canal de comunicación preferido: </label>
+                    <select id="form_phone_option">
+                        <option value="form_phone_option_email">Email</option>
+                        <option value="form_phone_option_sms">Mensaje de Texto (SMS)</option>
+                        <option value="form_phone_option_telegram">Telegram</option>
+                        <option value="form_phone_option_whatsapp" selected>Whatsapp</option>
+                    </select></p>
+                </span>
+
+            </div>
+            
+                    
+            <div>
+
+                <span>
+                    
+                    <p>Motivo General de la Consulta:
+                    <br>
+                    <input type="checkbox" name="form_fitness" id="form_fitness">
+                    <label for="form_fitness">Quiero mejorar mi estado físico</label>
+                    <br>
+                    <input type="checkbox" name="form_sport" id="form_sport">
+                    <label for="form_sport">Soy deportista</label>
+                    <br>
+                    <input type="checkbox" name="form_pain" id="form_pain">
+                    <label for="form_pain">Sufro de dolores y/o lesiones</label>
+                    </p>                        
+                
+                </span>
+
+            </div>
+                    
+            <div>
+
+                <span>
+            
+                    <p>Mensaje o Comentarios</p>
+                    <textarea name="form_msg" id="form_msg" placeholder="Acá podés contarme en más detalle tu situación y/o inquietudes" cols="50" rows="20"></textarea>
+
+                </span>                    
+
+            </div>
+            
+            <div>
+
+                <span>
+
+                    <input type="checkbox" name="form_terms" id="form_terms"> Acepto Términos y Condiciones
+                    <input type="submit" id="form_submit" name="form_submit" value="Enviar">
+                </span>
+
+            </div>
+
+        </form>
+    </article>
+
+{% endblock %}

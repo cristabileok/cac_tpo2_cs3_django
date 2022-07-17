@@ -1,0 +1,55 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}CS3 - Principal{% endblock %}
+
+
+{% block content %}
+
+    <div class="no_border_div">
+
+        <figure>
+            <a href='#proba' ><img src="{% static 'core/img/gym_frustration.png' %}"></a>
+            <figcaption>
+                ¡CLICKEÁ EN LA FOTO PARA CAMBIAR TU DESTINO!
+            </figcaption>
+        </figure>
+        
+
+        <article>
+        
+            <h3>¿Sufrís de dolores de espalda, hombro o rodilla<br>y ningún tratamiento tiene efectos duraderos?</h3>
+            <h3>¿Querés mejorar tu estado físico pero te cuesta arrancar?</h3>
+            <h3>¿Querés ganar fuerza pero sentís que<br><em>no te dan bola</em> en el gimnasio?</h3>
+                                                  
+        </article>
+
+    </div>
+    
+    <div class="border_div" id="proba">
+
+        <article>
+
+            <p>¡Probá un entrenamiento especialmente adaptado a tus necesidades e intereses!</p>
+            <p>Evalúo tus patrones de movimiento, historial médico y deportivo, fortalezas y debilidades para desarrollar el mejor programa a tu medida.</p>
+            <p>Utilizo una combinación de metodologías y ejercicios provenientes del levantamiento de pesas, la calistenia, las artes marciales y la rehabilitación para corregir tus patrones de movimiento, mejorar tu postura y tu consciencia corporal, y ayudarte a ganar fuerza, flexibilidad y resistencia.</p>
+            <p>Las atención es personalizada, tanto en clases individuales como en grupos reducidos (4 personas máximo).</p>
+            <p>Todo el entrenamiento es al aire libre, en el Parque Chacabuco.</p>
+                                            
+        </article>
+
+        <figure>
+            <video src="{% static 'core/vid/vid_alumnos.mp4' %}" autoplay muted loop></video>
+        </figure>
+
+    </div>
+
+    <article class="border_div" id="donde_clases">
+
+        <h3>¿Dónde son las Clases?</h3>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6565.660800749606!2d-58.442708686877424!3d-34.63372595998386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1653834442420!5m2!1sen!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    </article>
+            
+{% endblock %}

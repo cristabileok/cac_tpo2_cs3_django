@@ -1,0 +1,63 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}CS3 - Sobre Mí{% endblock %}
+
+
+{% block content %}
+
+    <h2>Sobre Mí</h2>
+       
+      <div class="border_div">
+
+          <article>
+
+              <p>Hace más de 10 años que entreno a todo tipo de personas, desde población general a deportistas internacionales.</p>
+              <p>Estudié Preparación Física, Musculación y Masoterapia en IPEF.</p>
+              <p>Profundicé en Entrenamiento de la Fuerza aplicada a la preparación física y el Fitness en UCES con <a href='https://www.instagram.com/anselmi_horacio/?hl=en' target="_blank">Horacio Anselmi.</a></p>
+              <p>Entreno y me capacito desde el año 2013 con <a href='https://www.instagram.com/arielcouceirogonzalez/?hl=en' target="_blank">Ariel Couceiro González</a>, referente internacional en entrenamiento de la Fuerza y calidad de Movimiento.</p>
+              <p>En el año 2022 aprobé el examen de 'Especialista Certificado en Fuerza y Acondicionamiento' de la <a href="https://www.nsca.com/certification/cscs/" target="_blank">National Strength and Conditioning Association</a> de los Estados Unidos.</p>                
+      
+          </article>
+
+          <figure>
+            <video src="{% static 'core/vid/vid_cris.mp4' %}" autoplay muted loop></video>
+          </figure>
+      </div>
+  
+      <div class="border_div">
+
+          <figure>
+            <img src="{% static 'core/img/tkd1.jpg' %}">
+            <br>
+            <img src="{% static 'core/img/bjj1.jpg' %}">
+          </figure>
+
+          <article>
+  
+              <p>Practiqué artes marciales y deportes de combate toda mi vida,<br>principalmente Taekwondo WT y Brazilian Jiu Jitsu.</p>
+              <p>En el año 2015 fui parte de la Selección Argentina de Taekwondo,<br>representando al país en el Campeonato Sudamericano de Lima, Perú, en la modalidad de Poomsae.</p>
+              <p>Enseñe Taekwondo a niños y adultos por más de 10 años,<br>y fui Coach en competencias internacionales.</p>
+              <p>En la actualidad continúo practicando Brazilian Jiu-Jitsu<br> con el profesor Martín Manson, faixa preta 3er Grau.</p>
+      
+          </article>
+         
+      </div>
+
+      <div class="border_div">
+
+          <article>
+  
+              <p>En el año 2021 defendí mi Tesis de Grado en Filosofía en la Universidad de Buenos Aires, sobre la consciencia corporal en la filosofía de las ciencias cognitivas.</p>
+              <p>En la actualidad me encuentro estudiando Desarrollo Web</p>
+              <p>Me apasiona el entrenamiento, la filosofía, las ciencias cognitivas, la economía, la historia, la tecnología, y los juegos de mesa.</p>
+      
+          </article>
+
+          <figure>
+            <img src="{% static 'core/img/filo1.jpg' %}">
+          </figure>
+
+      </div>
+    
+{% endblock %}
