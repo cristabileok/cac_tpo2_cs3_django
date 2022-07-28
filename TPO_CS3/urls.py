@@ -24,3 +24,5 @@ urlpatterns = [
     path('timetable_fees', views.timetable_fees, name='timetable_fees'),
     path('contact/', views.contact, name='contact'),
 ]
+
+#admin.site.site_header = "CS3 - Panel de Administrador"
