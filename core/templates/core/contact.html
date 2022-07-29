@@ -8,9 +8,19 @@
 
     <article>
 
-        <h2> Completá el formulario<br>y me pondré en contacto a la brevedad.</h2>                
+        <h2> Completá el formulario<br>y me pondré en contacto a la brevedad.</h2>  
+        
+        <form action="" method='POST'>{% csrf_token %}
+            
+            <table>
+                {{ form.as_table }}
+            </table>
+
+            <input type="submit" value="Enviar">
+
+        </form>
                 
-        <form action="" name="form" method="get">
+        <!-- <form action="" name="form" method="get">
 
             <div>
 
@@ -96,7 +106,7 @@
 
             </div>
 
-        </form>
+        </form> -->
     </article>
 
 {% endblock %}

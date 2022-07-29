@@ -16,13 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views
+from contact_database import views as views_contact
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('about/', views.about, name='about'),
     path('timetable_fees', views.timetable_fees, name='timetable_fees'),
-    path('contact/', views.contact, name='contact'),
+    path('contact/', views_contact.contact, name='contact'),
 ]
 
 #admin.site.site_header = "CS3 - Panel de Administrador"

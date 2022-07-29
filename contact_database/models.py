@@ -8,7 +8,7 @@ class Contact(models.Model):
     
     ch_male = 'ma'
     ch_female = 'fe'
-    sex_choice = [(ch_male,"Male"), (ch_female,"Female")]
+    sex_choice = [(ch_male,"Hombre"), (ch_female,"Mujer")]
     sex = models.CharField(max_length=2, choices=sex_choice, verbose_name="Sexo")
     
     email = models.EmailField(verbose_name="Email")
@@ -39,7 +39,8 @@ class Contact(models.Model):
     
     message = models.TextField(verbose_name="Mensaje")
     created = models.DateTimeField(auto_now_add=True, verbose_name="Fecha de Creación")
-    updated = models.DateTimeField(auto_now=True, verbose_name="Última Modificación")    
+    updated = models.DateTimeField(auto_now=True, verbose_name="Última Modificación")
+          
     
 def __str__(self):
     return self.name
