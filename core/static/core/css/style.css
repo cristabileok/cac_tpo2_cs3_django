@@ -296,6 +296,16 @@ form div {
     margin: 10px;
     }
 
+form table {
+    border-spacing: 2rem;
+    font-size: 1.25rem;
+    text-align: left;    
+}
+
+form table tr {
+    padding: 10px;
+}
+
 footer {
     background-color: rgba(56,56,56,.5);
     display: flex;

@@ -2,6 +2,16 @@
 {% load i18n static %}
 
 {% block title %}{{ title }} | {% trans "Custom Admin Title" %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">
+        <img src="{% static 'core/img/Logo CS3 nuevo.png' %}" height="110px" />
+    </a>
+    Panel de Administrador
+</h1>
+{% endblock %}
+
 {% block extrastyle %}
      <link rel="stylesheet" type="text/css" href="{% static "core/css/admin_color.css" %}"/>
 {% endblock %}

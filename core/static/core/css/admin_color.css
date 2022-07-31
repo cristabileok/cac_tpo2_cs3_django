@@ -1,9 +1,10 @@
 #branding h1, #branding h1 a:link, #branding h1 a:visited {
     color: #fff;
+    font-weight: bold;
 }
 
 #header {
-    background: #0b0f0b;
+    background: #0A0B0B;
     color: #fff;
 }
 #header a:link, #header a:visited {

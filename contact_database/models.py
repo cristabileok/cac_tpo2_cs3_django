@@ -30,24 +30,26 @@ class Contact(models.Model):
     ch_fitness = "FIT"
     ch_sport = "SPO"
     ch_pain = "PAI"
+    ch_other = "OTH"
     reason_choice = [
         (ch_fitness, "Quiero mejorar mi condición física"),
         (ch_sport, "Soy deportista y quiero mejorar mi rendimiento"),
-        (ch_pain, "Sufro de dolor o lesiones")
+        (ch_pain, "Sufro de dolor o lesiones"),
+        (ch_other, "Otro"),
     ]
-    reason = models.CharField(max_length=3, choices=reason_choice, verbose_name="Motivo de la Consulta")
+    reason = models.CharField(max_length=3, choices=reason_choice, verbose_name="Motivo principal de la Consulta")
     
-    message = models.TextField(verbose_name="Mensaje")
+    message = models.TextField(verbose_name="Mensaje", blank=True)
     created = models.DateTimeField(auto_now_add=True, verbose_name="Fecha de Creación")
     updated = models.DateTimeField(auto_now=True, verbose_name="Última Modificación")
           
     
-def __str__(self):
-    return self.name
+    def __str__(self):
+        return self.name
 
-class Meta:
-    verbose_name = "Contacto"
-    verbose_name_plural = "Contactos"
-    ordering = ["-created"]
+    class Meta:
+        verbose_name = "Contacto"
+        verbose_name_plural = "Contactos"
+        ordering = ["-created"]
     
     
